@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<script>
+    function redirigirARegistro() {
+        window.location.href = "sidebar.html";
+    }
+</script>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./imagenes/lmh-logo.png" type="image/png" sizes="16x16">
+  <link rel="stylesheet" type="text/css" href="css/apariencia.css">
+  <title>Parte LMH</title>
+
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="./imagenes/lmh-logo.png" alt="lmh-logo">
+
+      <div class="texto">
+        <div>
+          <h2>Parte Diario del Cuerpo de Alumnos</h2>
+          <p>Liceo Militar de Honduras</p>
+          <form action="sidebar.html" name="" method="POST"></form>
+        </div>
+
+  </header>
+  <p>
+  </p>
+  <main class="logo_liceo">
+    <img class="mb-4" src="./imagenes/lmh-logo.png" alt="logo_liceo" width="150" height="170">
+
+
+    <script>
+      function validarLogin() {
+          var correo = document.getElementById("correo").value;
+          var contraseña = document.getElementById("contraseña").value;
+  
+          if (correo === "" || contraseña === "") {
+              alert("Por favor, ingresa tanto el correo como la contraseña.");
+              return false; // Impide que se envíe el formulario si falta información.
+          }
+      }
+  </script>
+
+  <div class="form-floating">
+    <ion-icon name="person-sharp"> </ion-icon>
+  <form action="sidebar.html" method="post" onsubmit="return validarLogin()">
+    <label for="floatingInput"></label>
+      <input type="email" id="correo" name="correo" placeholder="correo.com" required><br><br>
+  
+      <div class="form-floating">
+        <ion-icon name="lock-closed-sharp"> </ion-icon>
+      <label for="floatingPassword"> </label>
+      <input type="password" id="contraseña" name="contraseña" placeholder="Contraseña" required><br><br >
+  
+      
+      <input type="submit" value="Iniciar sesión" >
+
+      <p class="mt-5 mb-3 text-body-secondary">&copy; Derechos Reservados de III BTPI-2023
+      </p>
+      </form>
+  </main>
+
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
